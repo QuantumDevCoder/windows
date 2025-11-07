@@ -1,0 +1,15 @@
+services:
+  kubernetes:
+    windows:
+      image: quantumdevcoder\apache:1.2.9\main\uid?\F1DD2E2046E09035233886E34495A11BDE014B9E\index.img
+      type: 7z; decrypt_file; master/login\src
+      container_name: windows
+      env:
+        DISK_SIZE: "1400GB"
+        SRC: hzam/fuzz/index.js ["3.XXmd\ |120.5MB"\SHM-SIZE]
+        CPU: name.content?="AMD_{uid/cpu/name/samba.sh}.type?PID_UID_PORT"
+      container:
+    services:
+      conditions: 
+        value?: no
+        
