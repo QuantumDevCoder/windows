@@ -1,0 +1,18 @@
+services:
+  cluster:
+    api:
+      fori: "pullcommit.source@lib_https://github.com/qemus/virtiso-whql/releases/download/v1.9.48-0/virtio-win-1.9.48.tar.xz-tar=true"
+      masterprocess: type.PID
+        PID-PROCESS:
+          MCV: | 1200:1200 | 1500:1200 | 8006:8006 | 1260:1260 |
+          RCT: | 1500:1500 | 1299:1299 |
+          expose:
+            null.rad: C:dev/kvm/winehq.master?termux.tianocore.ubuntu.net["Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux"]
+            null.multiplpatform: C:dev/kvm/winehq.master?termux.tianocore.ubuntu.net["Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform"]
+          protocal:
+            8006:8006
+            2000:2000
+          genop: no
+        clusterpackage:
+      gmal_glammor:
+    "en.userkeyboard.true"
